@@ -1,3 +1,9 @@
+# My ignored files
+my-js-file.js
+.prettierrc.json
+
+
+
 # Logs
 logs
 *.log
