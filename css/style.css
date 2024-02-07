@@ -1,3 +1,117 @@
+/* Global styles */
 body {
-   font-family: "Roboto";
+   font-family: "Roboto", "Raleway", sans-serif;
+   color: #434455;
+   background-color: #ffffff;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+}
+
+a {
+   text-decoration: none;
+   font-style: normal;
+}
+
+ul,
+ol {
+   list-style-type: none;
+}
+
+
+
+/* header */
+.logo {
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1.16667;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #4d5ae5;
+}
+
+.header__logo {
+   color: #2e2f42;
+}
+
+.nav__link {
+   font-weight: 500;
+   letter-spacing: 0.02em;
+   color: #2e2f42;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+   color: #404bbf;
+}
+
+.nav__link:active {
+   text-decoration: underline;
+}
+
+.address__link {
+   color: currentColor;
+}
+.address__link:hover,
+.address__link:focus {
+   color: #404bbf;
+}
+
+
+.order,
+.footer {
+   background: #2e2f42;
+}
+
+.title {
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 1.07143;
+   text-align: center;
+   color: #fff;
+}
+
+.button {
+   background: #4d5ae5;
+   width: 169px;
+   height: 56px;
+   cursor: pointer;
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: #fff;
+}
+
+.button:hover,
+.button:focus {
+   background: #404bbf;
+}
+
+
+.section-title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11111;
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+   text-align: center;
+   color: #2e2f42;
+}
+
+.strategy__title,
+.card-team__name {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: #2e2f42;
+}
+
+.footer__logo {
+   color: #f4f4fd;
+}
+.footer__text {
+   color: #f4f4fd;
 }
