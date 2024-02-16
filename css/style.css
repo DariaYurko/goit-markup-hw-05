@@ -1,9 +1,38 @@
-/* Global styles */
-*,
-*::after,
-*::before {
-   box-sizing: border-box;
+/* =================== GLOBAL STYLES =======================*/
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+	margin-top: 0;
+	margin-bottom: 0;
 }
+
+ul, 
+ol {
+   list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+button {
+   cursor: pointer;
+   border: none;
+}
+
 
 body {
    font-family: "Roboto", sans-serif;
@@ -11,92 +40,32 @@ body {
    background-color: #ffffff;
    line-height: 1.5;
    letter-spacing: 0.02em;
+/* 
+   overflow-x: hidden; */
 }
 
-a {
-   text-decoration: none;
+.container {
+   max-width: 1158px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
 }
 
-ul,
-ol {
-   list-style-type: none;
-}
-
-
-
-/* header */
-.logo {
-   font-family: "Raleway", sans-serif;
-   font-weight: 700;
-   font-size: 18px;
-   line-height: 1.17;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   color: #4d5ae5;
-}
-
-.header__logo {
-   color: #2e2f42;
-}
-
-.nav__link {
-   font-weight: 500;
-   letter-spacing: 0.02em;
-   color: #2e2f42;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-   color: #404bbf;
-}
-
-.nav__link:active {
-   text-decoration: underline;
-}
-
-.address {
-   font-style: normal;
-}
-
-.address__link {
-   color: currentColor;
-}
-
-.address__link:hover,
-.address__link:focus {
-   color: #404bbf;
-}
-
-
-.order,
+.hero,
 .footer {
    background: #2e2f42;
 }
 
-.title {
+.section-title {
    font-weight: 700;
-   font-size: 56px;
-   line-height: 1.07;
+   font-size: 36px;
+   line-height: 1.11;
    letter-spacing: 0.02em;
+   text-transform: capitalize;
    text-align: center;
-   color: #fff;
-}
+   color: #2e2f42;
 
-.button {
-   font-family: "Roboto", sans-serif;
-   background: #4d5ae5;
-   cursor: pointer;
-
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.5;
-   letter-spacing: 0.04em;
-   color: #fff;
-}
-
-.button:hover,
-.button:focus {
-   background: #404bbf;
+   margin-bottom: 72px;
 }
 
 
@@ -119,18 +88,245 @@ ol {
    letter-spacing: 0.02em;
    color: #2e2f42;
 }
+/* =================== /GLOBAL STYLES =======================*/
 
+
+
+/*================= HEADER =================*/
+.header {
+   padding: 24px 0;
+   border-bottom: 1px solid #e7e9fc;
+}
+
+.header .container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+   gap: 76px;
+}
+
+.logo {
+   font-family: "Raleway", sans-serif;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #4d5ae5;
+}
+
+.header__logo_color {
+   color: #2e2f42;
+}
+
+.nav__list {
+   display: flex;
+   gap: 40px;
+}
+
+.nav__link {
+   font-weight: 500;
+   letter-spacing: 0.02em;
+   color: #2e2f42;
+
+   padding: 24px 0;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+   color: #404bbf;
+}
+
+.nav__link:active {
+   text-decoration: underline;
+}
+
+.address {
+   font-style: normal;
+}
+
+.address__list {
+   display: flex;
+   gap: 40px;
+}
+
+.address__link {
+   color: currentColor;
+}
+
+.address__link:hover,
+.address__link:focus {
+   color: #404bbf;
+}
+/*================= /HEADER =================*/
+
+
+
+/* ================= HERO ========= */
+.hero {
+   padding: 188px 0;
+}
+
+/* .container_flex {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 48px;
+} */
+
+.title {
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 1.07;
+   letter-spacing: 0.02em;
+   color: #ffffff;
+   text-align: center;
+
+   max-width: 496px;
+   margin: 0 auto;
+   margin-bottom: 48px;
+}
+
+.button {
+   font-family: "Roboto", sans-serif;
+   background: #4d5ae5;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: #ffffff;
+
+   padding: 16px 32px;
+   border-radius: 4px;
+   display: block;
+   margin: 0 auto;
+}
+
+.button:hover,
+.button:focus {
+   background: #404bbf;
+}
+/* ================= /HERO ========= */
+
+
+
+/*================== STRATEGY ========*/
+.strategy {
+   padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.strategy__list {
+   display: flex;
+   gap: 24px;
+}
+
+.strategy__item {
+   flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.strategy__title {
+   margin-bottom: 8px;
+}
+/*================ /STRATEGY ========*/
+
+
+
+/* =============== TEAM ============ */
 .team {
    background-color: #f4f4fd;
+   padding: 120px 0;;
+}
+
+.team__list {
+   display: flex;
+   gap: 24px;
 }
 
 .card-team {
    background-color: #ffffff;
+   flex-basis: calc((100% - 3 * 24px) / 4)
 }
 
-.footer__logo {
+.card-team__info {
+   padding: 32px 16px;
+   text-align: center;
+}
+
+.card-team__name {
+   margin-bottom: 8px;
+}
+/*================ /TEAM ============= */
+
+
+
+/* =============== PORTFOLIO ========= */
+.portfolio {
+   padding: 120px 0;
+
+}
+
+.portfolio__list {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 48px;
+   column-gap: 24px;
+}
+
+.card-portfolio {
+   width: calc((100% - 24px * 2) / 3);
+}
+
+.card-portfolio__info {
+   padding: 32px 16px;
+   border: 1px solid #e7e9fc;
+   border-top: none;
+}
+
+.card-portfolio__title {
+   margin-bottom: 8px;
+}
+/* =============== /PORTFOLIO ========= */
+
+
+
+/* =============== FOOTER ============== */
+.footer {
+   padding: 100px 0;
+}
+
+.footer .logo {
+   display: inline-block;
+   margin-bottom: 16px;
+}
+
+.footer__logo_color {
    color: #f4f4fd;
 }
+
 .footer__text {
    color: #f4f4fd;
+   max-width: 264px;
 }
+/* ============== /FOOTER ============== */
+
+
+
+/* ========== PRACTICE ========== */
+/* ========== /PRACTICE ========== */
