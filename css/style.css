@@ -113,13 +113,16 @@ body {
    color: #4d5ae5;
 }
 
+.header .logo {
+   margin-right: 76px;
+}
+
 .header__logo_color {
    color: #2e2f42;
 }
 
 .nav {
    display: flex;
-   gap: 76px;
    align-items: center;
 }
 
@@ -201,10 +204,11 @@ body {
    line-height: 1.5;
    letter-spacing: 0.04em;
    color: #ffffff;
-
-   padding: 16px 32px;
    border-radius: 4px;
+
    display: block;
+   padding: 16px 32px;
+   min-width: 169px;
    margin: 0 auto;
 }
 
@@ -263,11 +267,12 @@ body {
 
 .card-team {
    background-color: #ffffff;
-   flex-basis: calc((100% - 3 * 24px) / 4)
+   flex-basis: calc((100% - 3 * 24px) / 4);
+   border-radius: 0 0 4px 4px;
 }
 
 .card-team__info {
-   padding: 32px 16px;
+   padding: 32px 0;
    text-align: center;
 }
 
