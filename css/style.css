@@ -106,7 +106,7 @@ body {
 
 .social-media__link:hover,
 .social-media__link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .social-media__icon {
@@ -465,6 +465,11 @@ body {
 
 .footer .social-media {
   gap: 16px;
+}
+
+.footer .social-media__link:hover,
+.footer .social-media__link:focus {
+  background-color: #31d0aa;
 }
 /* ============== /FOOTER ============== */
 
