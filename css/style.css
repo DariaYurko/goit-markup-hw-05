@@ -31,6 +31,10 @@ a {
 button {
   cursor: pointer;
   border: none;
+
+  font-family: inherit;
+	color: currentColor;
+
 }
 
 body {
