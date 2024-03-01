@@ -52,42 +52,51 @@
   </header>
 
   <main class="main">
+
     <!-- FORM -->
-    <form action="#" class="form" name="order-form" autocomplete="off">
-
-      <div class="form__btn-close">close</div>
-
-      <h4 class="form__title">
-        Leave your contacts and we will call you back
-      </h4>
-
-      <label class="form__label">Name
-        <input type="text" class="form__input" name="username" autofocus/>
-      </label>
-
-      <label class="form__label">Phone
-        <input type="tel" class="form__input" name="userphone" id="userphone" />
-      </label>
-
-      <label class="form__label">Email
-        <input type="email" class="form__input" name="usermail" id="usermail" />
-      </label>
-
-      <label class="form__label">Comment
-        <textarea class="form__input form__textarea" name="comment" placeholder="Text input"></textarea>
-      </label>
-
-      <label class="form__label form__label_checkbox">
-        <input type="checkbox" class="form__checkbox" />I accept the terms and conditions of the<a href="#" class="form__policy">Privacy Policy</a>
-      </label>
-     
-
-      <button class="button" type="submit">Send</button>
-    </form>
+  <div class="modal is-open">
+    <div class="modal-window">
+      <div class="modal-window__btn">
+        <svg class="modal-window__img" width="8" height="8">
+          <use href="./images/icons.svg#icon-closemark"></use>
+        </svg>
+      </div>
+      <h4 class="modal-window__title">Leave your contacts and we will call you back</h4>
+      <form class="form" name="order-form" autocomplete="off">                
+        <label class="form__label" for="username">
+          Name
+          <input type="text" id="username" class="form__input" name="username" required autofocus />
+        </label>
+      
+        <label class="form__label" for="userphone">
+          Phone
+          <input type="tel" id="userphone" class="form__input" name="userphone" id="userphone" required />
+        </label>
+      
+        <label class="form__label" for="usermail">
+          Email
+          <input type="email" id="usermail" class="form__input" name="usermail" id="usermail" required />
+        </label>
+      
+        <label class="form__label" for="usercomment">
+          Comment
+          <textarea id="usercomment" class="form__input form__textarea" name="comment" placeholder="Text input"></textarea>
+        </label>
+      
+        <label class="form__label form__label_checkbox" for="policy-agree">
+          <input id="policy-agree" class="form__checkbox" type="checkbox" name="policy-agree"/>
+          I accept the terms and conditions of the
+          <a href="#" class="form__policy">Privacy Policy</a>
+        </label>
+      
+        <button class="button" type="submit">Send</button>
+      </form>
+    </div>
+  </div> 
     <!-- /FORM -->
 
-    <!-- HERO -->
 
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <h1 class="title">Effective Solutions for Your Business</h1>
@@ -129,7 +138,7 @@
           <li class="strategy__item">
             <div class="strategy__image">
               <svg width="64" height="64">
-                <use href="./images/icons.svg#icon-notebook"></use>
+                <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
             </div>
             <h3 class="strategy__title">Diligence</h3>
@@ -434,6 +443,7 @@
 
   <footer class="footer">
     <div class="container">
+
       <div class="footer__content">
         <a class="logo" href="./index.html">Web<span class="footer__logo_color">Studio</span></a>
         <p class="footer__text">
@@ -443,7 +453,7 @@
       </div>
 
       <div class="social">
-        <p class="social__title">Social media</p>
+        <p class="social__title footer-content__title">Social media</p>
         <ul class="social-media">
           <li class="social-media__item">
             <a href="" class="social-media__link">
@@ -475,6 +485,35 @@
           </li>
         </ul>
       </div>
+
+      <!-- Attempt 1 -->
+      <form class="subscribe-form">
+        <label class="subscribe-form__label"  for="subscribe-mail" >
+          Subscribe
+          <input id="subscribe-mail" class="subscribe-form__input" type="email" name="usermail" placeholder="E-mail">
+        </label>
+        <button class="subscribe-form__btn button" type="submit">
+          Subscribe
+          <svg class="social-media__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-telegram"></use>
+          </svg>
+        </button>
+      </form>
+
+      <!-- Attempt 2 -->
+      <!-- <div class="subscribe">
+        <p class="subscribe-form__title footer-content__title">Subscribe</p>
+        <form class="subscribe__form">
+          <input class="subscribe-form__input" type="email" name="usermail" placeholder="E-mail">
+          <button class="subscribe-form__btn button" type="submit">
+            Subscribe
+            <svg class="social-media__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </form>
+      </div> -->
+
     </div>
   </footer>
 </body>
