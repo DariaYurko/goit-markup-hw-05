@@ -443,7 +443,6 @@
         </ul>
       </div>
 
-      <!-- Attempt 1 -->
       <form class="subscribe-form">
         <label class="subscribe-form__label" for="subscribe-mail">
           Subscribe
@@ -456,29 +455,14 @@
           </svg>
         </button>
       </form>
-
-      <!-- Attempt 2 -->
-      <!-- <div class="subscribe">
-        <p class="subscribe-form__title footer-content__title">Subscribe</p>
-        <form class="subscribe__form">
-          <input class="subscribe-form__input" type="email" name="usermail" placeholder="E-mail">
-          <button class="subscribe-form__btn button" type="submit">
-            Subscribe
-            <svg class="social-media__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </button>
-        </form>
-      </div> -->
-
     </div>
   </footer>
 
   <!-- MODAL -->
-  <div class="backdrop is-open">
+  <div class="backdrop">
 
     <div class="modal-window">
-      
+
       <button class="modal-window__btn-close" type="button">
         <svg class="modal-window__img-close" width="8" height="8">
           <use href="./images/icons.svg#icon-closemark"></use>
@@ -489,10 +473,11 @@
 
       <form class="form" name="order-form" autocomplete="off">
 
-        <div class="form__item form__item_input"> 
+        <div class="form__item form__item_input">
           <label class="form__label" for="username">Name</label>
           <div class="form__input-container">
-            <input class="form__input" type="text" id="username" name="username" pattern="a-zA-Zа-яА-ЯіІїЇєЄ" title="Daria" required />
+            <input class="form__input" type="text" id="username" name="username" pattern="a-zA-Zа-яА-ЯіІїЇєЄ"
+              title="Daria" required />
             <svg class="form__icon" width="12" height="12">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
@@ -523,9 +508,10 @@
           <label class="form__label" for="usercomment">Comment</label>
           <textarea class="form__textarea" id="usercomment" name="comment" placeholder="Text input"></textarea>
         </div>
-       
+
         <div class="form__item form__item_checkbox">
-          <input class="form__checkbox visually-hidden" id="policy-link" type="checkbox" name="policy-agree" value="true" required />
+          <input class="form__checkbox visually-hidden" id="policy-link" type="checkbox" name="policy-agree"
+            value="true" required />
           <label class="form__label-checkbox" for="policy-link">
             <span class="custom-checkbox">
               <svg class="custom-checkbox__icon" width="10" height="8">
@@ -544,4 +530,5 @@
   <!-- /MODAL -->
 
 </body>
+
 </html>
