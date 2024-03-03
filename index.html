@@ -525,8 +525,13 @@
         </div>
        
         <div class="form__item form__item_checkbox">
-          <input class="form__checkbox" id="policy-agree" type="checkbox" name="policy-agree" value="true" required />
-          <label class="form__label form__label_checkbox" for="policy-agree">
+          <input class="form__checkbox visually-hidden" id="policy-link" type="checkbox" name="policy-agree" value="true" required />
+          <label class="form__label-checkbox" for="policy-link">
+            <span class="custom-checkbox">
+              <svg class="custom-checkbox__icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
             I accept the terms and conditions of the <a href="#" class="form__policy">Privacy Policy</a>
           </label>
         </div>
