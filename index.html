@@ -53,49 +53,6 @@
 
   <main class="main">
 
-    <!-- FORM -->
-  <div class="modal is-open">
-    <div class="modal-window">
-      <div class="modal-window__btn">
-        <svg class="modal-window__img" width="8" height="8">
-          <use href="./images/icons.svg#icon-closemark"></use>
-        </svg>
-      </div>
-      <h4 class="modal-window__title">Leave your contacts and we will call you back</h4>
-      <form class="form" name="order-form" autocomplete="off">                
-        <label class="form__label" for="username">
-          Name
-          <input type="text" id="username" class="form__input" name="username" required autofocus />
-        </label>
-      
-        <label class="form__label" for="userphone">
-          Phone
-          <input type="tel" id="userphone" class="form__input" name="userphone" id="userphone" required />
-        </label>
-      
-        <label class="form__label" for="usermail">
-          Email
-          <input type="email" id="usermail" class="form__input" name="usermail" id="usermail" required />
-        </label>
-      
-        <label class="form__label" for="usercomment">
-          Comment
-          <textarea id="usercomment" class="form__input form__textarea" name="comment" placeholder="Text input"></textarea>
-        </label>
-      
-        <label class="form__label form__label_checkbox" for="policy-agree">
-          <input id="policy-agree" class="form__checkbox" type="checkbox" name="policy-agree"/>
-          I accept the terms and conditions of the
-          <a href="#" class="form__policy">Privacy Policy</a>
-        </label>
-      
-        <button class="button" type="submit">Send</button>
-      </form>
-    </div>
-  </div> 
-    <!-- /FORM -->
-
-
     <!-- HERO -->
     <section class="hero">
       <div class="container">
@@ -488,7 +445,7 @@
 
       <!-- Attempt 1 -->
       <form class="subscribe-form">
-        <label class="subscribe-form__label"  for="subscribe-mail" >
+        <label class="subscribe-form__label" for="subscribe-mail">
           Subscribe
           <input id="subscribe-mail" class="subscribe-form__input" type="email" name="usermail" placeholder="E-mail">
         </label>
@@ -516,6 +473,70 @@
 
     </div>
   </footer>
-</body>
 
+  <!-- MODAL -->
+  <div class="backdrop is-open">
+
+    <div class="modal-window">
+      
+      <button class="modal-window__btn-close" type="button">
+        <svg class="modal-window__img-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-closemark"></use>
+        </svg>
+      </button>
+
+      <p class="modal-window__text">Leave your contacts and we will call you back</p>
+
+      <form class="form" name="order-form" autocomplete="off">
+
+        <div class="form__item form__item_input"> 
+          <label class="form__label" for="username">Name</label>
+          <div class="form__input-container">
+            <input class="form__input" type="text" id="username" name="username" pattern="a-zA-Zа-яА-ЯіІїЇєЄ" title="Daria" required />
+            <svg class="form__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="form__item form__item_input">
+          <label class="form__label" for="userphone">Phone</label>
+          <div class="form__input-container">
+            <input type="tel" id="userphone" class="form__input" name="userphone" id="userphone" required />
+            <svg class="form__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="form__item form__item_input">
+          <label class="form__label" for="usermail">Email</label>
+          <div class="form__input-container">
+            <input type="email" id="usermail" class="form__input" name="usermail" id="usermail" required />
+            <svg class="form__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="form__item form__item_textarea">
+          <label class="form__label" for="usercomment">Comment</label>
+          <textarea class="form__textarea" id="usercomment" name="comment" placeholder="Text input"></textarea>
+        </div>
+       
+        <div class="form__item form__item_checkbox">
+          <input class="form__checkbox" id="policy-agree" type="checkbox" name="policy-agree" value="true" required />
+          <label class="form__label form__label_checkbox" for="policy-agree">
+            I accept the terms and conditions of the <a href="#" class="form__policy">Privacy Policy</a>
+          </label>
+        </div>
+
+        <button class="contact-form__button button" type="submit">Send</button>
+
+      </form>
+    </div>
+  </div>
+  <!-- /MODAL -->
+
+</body>
 </html>
