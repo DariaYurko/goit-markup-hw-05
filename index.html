@@ -399,6 +399,7 @@
   </main>
 
   <footer class="footer">
+
     <div class="container">
       <div class="footer__content">
         <a class="logo" href="./index.html">Web<span class="footer__logo_color">Studio</span></a>
@@ -443,27 +444,24 @@
       </div>
 
       <div class="subscribe">
-        <p class="subscribe__description footer-content__title">Subscribe</p>
-        
+        <p class="subscribe__description footer-content__title">Subscribe</p>     
         <form class="subscribe-form">
           <label class="subscribe-form__label" for="subscribe-mail">
             <input class="subscribe-form__input" id="subscribe-mail" type="email" name="usermail" placeholder="E-mail">
-          </label>
-          
+          </label>          
           <button class="subscribe-form__btn button" type="submit">
             Subscribe
             <svg class="social-media__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-telegram"></use>
             </svg>
           </button>
-          
         </form>
       </div>
 
     </div>
   </footer>
 
-  <!-- MODAL -->
+  <!------- MODAL-WINDOW ------>
   <div class="backdrop">
     <div class="modal-window">
       <button class="modal-window__btn-close" type="button">
@@ -471,21 +469,20 @@
           <use href="./images/icons.svg#icon-closemark"></use>
         </svg>
       </button>
-      <p class="modal-window__text">Leave your contacts and we will call you back</p>
+
+      <p class="modal-window__text">Leave your contacts and we will call you back</p>  
       
       <form class="form" name="order-form" autocomplete="off">
-
         <div class="form__item form__item_input">
           <label class="form__label" for="user-name">Name</label>
           <div class="form__input-container">
-            <input class="form__input" type="text" id="user-name" name="username" pattern="a-zA-Zа-яА-ЯіІїЇєЄ"
+            <input class="user-name" type="text" id="user-name" name="username" pattern="a-zA-Zа-яА-ЯіІїЇєЄ"
               title="Daria" required />
             <svg class="form__icon" width="18" height="24">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
         </div>
-
         <div class="form__item form__item_input">
           <label class="form__label" for="userphone">Phone</label>
           <div class="form__input-container">
@@ -495,7 +492,6 @@
             </svg>
           </div>
         </div>
-
         <div class="form__item form__item_input">
           <label class="form__label" for="usermail">Email</label>
           <div class="form__input-container">
@@ -505,12 +501,10 @@
             </svg>
           </div>
         </div>
-
         <div class="form__item form__item_textarea">
           <label class="form__label" for="user-comment">Comment</label>
           <textarea class="form__textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
         </div>
-
         <div class="form__item form__item_checkbox">
           <input class="form__checkbox visually-hidden" id="user-privacy" type="checkbox" name="user-privacy"
             value="true" required />
@@ -520,17 +514,14 @@
                 <use href="./images/icons.svg#icon-checkmark"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the <a href="#" class="policy-link">Privacy policy</a>
+            I accept the terms and conditions of the <a href="#" class="policy-link">Privacy Policy</a>
           </label>
         </div>
-
         <button class="contact-form__button button" type="submit">Send</button>
-
       </form>
     </div>
   </div>
-  <!-- /MODAL -->
+  <!------- MODAL-WINDOW ------>
 
 </body>
-
 </html>
