@@ -485,18 +485,6 @@ body {
   margin-left: auto;
 }
 
-.subscribe-form__label {
-  /* font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff; */
-
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .subscribe-form__input {
   height: 40px;
   width: 264px;
@@ -513,7 +501,7 @@ body {
 }
 
 
-.subscribe-form__btn {
+.subscribe-btn {
   min-width: 165px;
   height: 40px;
   
@@ -522,9 +510,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  /* column-gap: 16px; */
 }
 
+.subscribe-btn__icon {
+  margin-left: 16px;
+}
 /* -------------------------------------------------- */
 
 /* ====================== /FOOTER ==================== */
